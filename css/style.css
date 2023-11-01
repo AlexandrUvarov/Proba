@@ -371,6 +371,19 @@ a {
   outline: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .btn {
   border: none;
   border-radius: 10px;
@@ -641,6 +654,72 @@ a {
   margin: auto;
   color: white;
   background-color: #2D5E5E;
+}
+
+.form {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.form__input-wrap {
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+}
+.form__input-wrap select, .form__input-wrap input, .form__input-wrap textarea {
+  border: none;
+  background: none;
+  padding: 8px 20px;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  cursor: not-allowed;
+}
+.form__input-wrap_select::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/sort-down.svg") center no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  pointer-events: none;
+}
+.form__checkbox {
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.form__checkbox-label {
+  position: relative;
+  padding-left: 20px;
+  color: #2D5E5E;
+}
+.form__checkbox-label::before, .form__checkbox-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+.form__checkbox-label::before {
+  background: #fff;
+  border: 1px solid #2D5E5E;
+  width: 15px;
+  height: 15px;
+}
+.form__checkbox-label::after {
+  background: #2D5E5E;
+  width: 11px;
+  height: 11px;
+  left: 2px;
+  display: none;
+}
+input:checked + .form__checkbox-label::after {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
