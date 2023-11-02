@@ -20,6 +20,10 @@ a {
   outline: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

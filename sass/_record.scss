@@ -1,6 +1,4 @@
 .record {
-    
-    // background-size: cover;
     color: #000;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -16,8 +14,6 @@
     &__title {
         margin: auto;
         grid-column: 1 / 3; 
-        // grid-row: 1/3;
-        // margin: 0; 
         line-height: 1.5;
         margin-bottom: 15px;
         font-size: 48px;

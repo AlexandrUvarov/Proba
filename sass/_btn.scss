@@ -14,6 +14,8 @@
     font-size: 18px;
     line-height: 1.33;
     border: 3px solid transparent;
+
+    
     
 
     &_bordered {
@@ -59,12 +61,7 @@
         background: transparent;
         }
 
-    // &_check {
-            
-    //         grid-column: 2/2;
-    //         grid-row: 6/7;
-            
-    //     }
+    
         &_send {
             margin-left: 250px;
             grid-column: 1/2;

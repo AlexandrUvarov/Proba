@@ -371,6 +371,10 @@ a {
   outline: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -475,8 +479,14 @@ a {
 @media screen and (max-width: 767px) {
   .nav__list {
     display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 30px;
     flex-direction: column;
     background: #fff;
+    justify-content: center;
   }
 }
 .nav__link {
@@ -559,6 +569,11 @@ a {
   max-width: 300px;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .services__item {
+    max-width: 100%;
+  }
+}
 .services__icon {
   margin-bottom: 30px;
 }
@@ -571,6 +586,11 @@ a {
 .services__description {
   font-weight: 500;
   line-height: 1.5;
+}
+@media screen and (max-width: 1200px) {
+  .services {
+    flex-direction: column;
+  }
 }
 
 .about {
@@ -588,6 +608,12 @@ a {
   grid-row: 1/4;
   grid-column: 4/5;
 }
+@media screen and (max-width: 1200px) {
+  .about__img {
+    grid-column: unset;
+    grid-row: 2/3;
+  }
+}
 .about__title, .about__desc {
   grid-column: 1/4;
   margin: 0;
@@ -596,6 +622,20 @@ a {
 .about__title {
   margin-bottom: 15px;
   font-size: 36px;
+}
+.about__btns {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .about__btns {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
 }
 
 .record {
