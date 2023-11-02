@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .center {
-  padding-left: calc(50vw - 563px);
-  padding-right: calc(50vw - 563px);
+  padding-left: calc(50vw - 600px);
+  padding-right: calc(50vw - 595px);
 }
 
 a {
@@ -31,6 +31,19 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .center {
+    padding-left: calc(50vw - 360px);
+    padding-right: calc(50vw - 360px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .center {
+    padding-left: calc(50vw - 195px);
+    padding-right: calc(50vw - 195px);
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
